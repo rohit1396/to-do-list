@@ -1,0 +1,68 @@
+.todo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    max-height: 500px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 20px 0;
+    margin-top: 20px;
+    overflow: scroll;
+    background-color: #cc0066;
+    position: relative;
+}
+
+.todo::-webkit-scrollbar {
+    display: none;
+}
+
+.todo_input {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.todo_input > input {
+    height: 30px;
+    padding: 15px;
+    width: 250px;
+    outline: none;      
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.todo_displayItem {
+    height: 300px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo_list {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    color: #1f2e2e;
+}
+
+.todo_addIcon {
+    /* height: 30px !important; */
+    max-height: 30px !important;
+    color: #ffff1a;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.todo_updateIcon, .todo_editIcon, .todo_deleteIcon {
+    color: #ffff1a;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
