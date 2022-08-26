@@ -6,7 +6,7 @@
     width: 450px;
     max-height: 500px;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     padding: 20px 0;
     margin-top: 20px;
     overflow: scroll;
@@ -19,35 +19,66 @@
 }
 
 .todo_input {
+    width: 400px;
+    max-height: 100px;
     display: flex;
+    /* justify-content: space-between; */
     align-items: center;
     position: sticky;
-    top: 0;
+    z-index: 10;
+    top: 0px;
 }
 
+/* .todo_inputBlack {
+    width: 400px;
+    max-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+    background-color: #ffff1a;
+} */
+
 .todo_input > input {
-    height: 30px;
+    height: 20px;
     padding: 15px;
-    width: 250px;
+    width: 70%;
     outline: none;      
     font-size: 20px;
     font-weight: 500;
+    border: none;
+    border-radius: 10px;
 }
 
 .todo_displayItem {
     height: 300px;
-    width: 250px;
+    width: 350px;
     display: flex;
     flex-direction: column;
+    z-index: 1;
 }
 
 .todo_list {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 250px;
+    width: 100%;
     color: #1f2e2e;
+}
+
+.todo_list > li {
+    font-size: 25px;
+    font-weight: 600;
+    list-style: none;
+}
+
+.todo_list > div{
+    display: flex;
+    align-items: center;
 }
 
 .todo_addIcon {
