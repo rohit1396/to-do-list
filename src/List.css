@@ -1,5 +1,5 @@
 section {
-  max-width: 450px;
+  max-width: 90%;
   margin: 10px auto;
   display: flex;
   flex-direction: column;
@@ -16,9 +16,7 @@ article {
 }
 
 .listItem {
-  /* width: 70%; */
   text-transform: capitalize;
-  /* text-align: center; */
 }
 
 .btn-group {
@@ -49,7 +47,6 @@ article {
   height: 20px;
   margin-left: 2px;
   color: #ffffff;
-  /* background-color: #00b33c; */
   background-color: #009900;
   font-size: 10px;
   font-weight: 100;
